@@ -3,6 +3,7 @@
 Lista de Exercicios na Diciplina de Algoritimos II
 
 Universidade: UNIRV
+
 Curso: Engenharia de Software
 Ano: 2020
 
