@@ -14,20 +14,17 @@ int main()
     int vetor[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     bool ordenado = true;
 
-    for (int i = 0; i < 10; i++)
+    for (int j = 0; j < 9; j++)
     {
-        for (int j = 0; j < 9; j++)
+        if (vetor[j] > vetor[j + 1])
         {
-            if (vetor[j] > vetor[j + 1])
-            {
-                ordenado = false;
-            }
+            ordenado = false;
         }
     }
 
     if (ordenado)
     {
-        printf("O Vetor Esta Odenado!\n");
+        printf("O Vetor Esta Ordenado!\n");
     }
     else
     {
