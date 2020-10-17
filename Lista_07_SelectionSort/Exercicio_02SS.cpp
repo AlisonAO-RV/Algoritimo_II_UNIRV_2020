@@ -20,12 +20,11 @@ int main()
         printf("| %d ", vetor[i]);
     }
     printf("|\n");
-    
 
     for (int i = 0; i < 15; i++)
     {
         menor = i;
-        for (int j =  i + 1 ; j < 16; j++)
+        for (int j = i + 1; j < 16; j++)
         {
             if (vetor[j] > vetor[menor])
             {
@@ -43,5 +42,4 @@ int main()
         printf("| %d ", vetor[i]);
     }
     printf("|\n");
-    
 }

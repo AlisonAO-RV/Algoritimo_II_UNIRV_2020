@@ -31,8 +31,7 @@ int main()
             printf("|\n");
             cont = 0;
         }
-        
-    }
+        }
     printf("|\n");
 
     for (int i = 0; i < 54; i++)
