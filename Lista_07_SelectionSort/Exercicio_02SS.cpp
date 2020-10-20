@@ -19,7 +19,7 @@ int main()
     {
         printf("| %d ", vetor[i]);
     }
-    printf("|\n");
+    printf("|\n\n");
 
     for (int i = 0; i < 15; i++)
     {
@@ -34,9 +34,26 @@ int main()
         auxiliar = vetor[menor];
         vetor[menor] = vetor[i];
         vetor[i] = auxiliar;
+
+        for (int k = 0; k < 16; k++)
+        {
+            if (k == menor)
+            {
+                printf("| \33[0;33m%d\33[0m ", vetor[k]);
+            }
+            else if (k == i)
+            {
+                printf("| \33[0;33m%d\33[0m ", vetor[k]);
+            }
+            else
+            {
+                printf("| %d ", vetor[k]);
+            }
+        }
+        printf("|\n");
     }
 
-    printf("Vetor Ordenado\n");
+    printf("\nVetor Ordenado\n");
     for (int i = 0; i < 16; i++)
     {
         printf("| %d ", vetor[i]);
