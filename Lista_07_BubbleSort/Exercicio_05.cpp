@@ -25,6 +25,7 @@ int main()
     contadorTroca = 0;
     contadorComparacao = 0;
     auxiliar = 0;
+    
     for (int i = 1; i < 13; i++)
     {
         for (int j = 0; j < 13 - i; j++)

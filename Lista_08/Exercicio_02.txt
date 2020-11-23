@@ -1,0 +1,52 @@
+/* 
+ * ALGORITMOS PARA ENGENHARIA II  - 2020/2
+ * Aluno: Alison Alain de Oliveira
+ * Ordenação
+ * EXERCICIO 02 - Insertion Sort
+ */
+
+02) Ilustre a operação de Insertion-Sort no arranjo A = {31, 41, 59, 26, 41, 58}
+
+Na Ordenação Insertion Sort a Comparação começa na segunda posição até a n posição.
+Sua comparação é sempre com a posição anterior, fazendo as trocas necessarias comparando
+com a anterior até a primeira posição.
+
+Exemplo:
+
+==>  31   41   59   26   41   58   ==> VETOR ORIGINAL
+
+O SIMBOLO "|" INDOCA A POSIÇÃO DO PRIMEIRO LAÇO
+OS SIMBOLOS "[][]" INDICAM AS COMPARAÇÕES E TROCAS DENTRO DO SENGUNDO LAÇO
+
+
+ORDENADO  <== | ==>  DESORDENADO
+========>  31 |  41   59   26   41   58   ==> DEFINIMOS A PRIMEIRA POSIÇÃO COMO ORDENADO
+
+
+ORDENADO  <== | ==>  DESORDENADO
+========> [31]|[41]  59   26   41   58   ==> 41 é maior que 31 = SIM => NÃO TROCA
+
+
+     ORDENADO  <== | ==>  DESORDENADO
+========>  31  [41]|[59]  26   41   58   ==> 59 é maior que 41 = SIM => NÃO TROCA
+
+
+          ORDENADO  <== | ==>  DESORDENADO
+========>  31   41  [59]|[26]  41   58   ==> 26 é maior que 59 = NÃO => TROCA
+========>  31  [41] [26]| 59   41   58   ==> 26 é maior que 41 = NÃO => TROCA
+========> [31] [26]  41 | 59   41   58   ==> 26 é maior que 31 = NÃO => TROCA
+========> [26] [31]  41 | 59   41   58   ==> 26 estã na primeira posição.
+
+
+               ORDENADO  <== | ==>  DESORDENADO
+========>  26   31   41  [59]|[41]  58   ==> 41 é maior que 59 = NÃO => TROCA
+========>  26   31  [41] [41]| 59   58   ==> 41 é maior que 41 = NÃO => TROCA
+========>  26  [31] [41]  41 | 59   58   ==> 41 é maior que 31 = SIM => NÃO TROCA
+
+
+                    ORDENADO  <== | ==>  DESORDENADO
+========>  26   31   41   41  [59]|[58]  ==> 58 é maior que 59 = NÃO => TROCA
+========>  26   31   41  [41] [58]| 59   ==> 58 é maior que 41 = SIM => NÃO TROCA
+
+                         ORDENADO  <== |
+========>  26   31   41   41   58   59 | ==> CHEGANDO NA ULTIMA POSIÇÃO O VETOR ESTA ORDENADO
