@@ -8,6 +8,4 @@ Curso: Engenharia de Software
 
 Ano: 2020
 
-aa0
-
 ![AlisonAO-RV](./imgs/Img_AlisonAO-RV.jpg)
